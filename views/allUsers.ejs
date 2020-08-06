@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=name%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%=name%></h1>
+<hr>
+<%if(Users.length==0){%>
+    <h2>No users found</h2>
+<%}%>
+
+<%Users.forEach(user=>{%>
+<h2>Name:<%=user.FullName%></h2>
+<h2>Location:<%=user.Location%></h2>
+<hr>
+<%})%>
+<br>
+<a href="/">Go back to homepage</a>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  <a href="allUsers">
+    Click here to render all users
+  </a>
+  <br>
+  <br>
+  <hr>
+  <h1>Add a User</h1>
+  <form action="addUser" method="post">
+    <h3>Name:<input type="text" name="name"></h3>
+    <h3>Location:<input type="text" name="location"></h3><br>
+    <input type="submit" value="Add User">
+  </form>
+  <br>
+  <br>
+  <hr>
+  <form action="searchUser" method="post">
+    <h3>Search User or Location:<input type="text" name="search"></h3>
+    <input type="submit" value="Search User">
+  </form>
+
+
+
+  </body>
+</html>
